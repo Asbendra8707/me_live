@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { Container, Form, Button, Card, InputGroup } from "react-bootstrap";
-import { Link, Navigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { FaEnvelope, FaLock, FaUser, FaEye, FaEyeSlash } from 'react-icons/fa';
-import './Authpage.css'
+import './AuthPage.css'
 import axios from 'axios';
 import Swal from 'sweetalert2';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 function Authpage() {
     const navigate = useNavigate();
