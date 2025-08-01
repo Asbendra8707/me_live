@@ -1,0 +1,48 @@
+.auth-bg {
+    background: linear-gradient(135deg, #053101, #0f5203);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: gradientMove 10s ease infinite;
+    background-size: 400% 400%;
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .auth-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: white;
+    animation: fadeIn 1s ease;
+  }
+  
+  .animate-card {
+    animation: popIn 0.6s ease forwards;
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .toggle-link {
+    color: #ffdf5d;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .toggle-link:hover {
+    color: #ffd000;
+  }
+  

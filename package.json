@@ -1,0 +1,8 @@
+{
+  "name": "mern-vercel",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm run build",
+    "install:all": "cd frontend && npm install && cd ../api && npm install"
+  }
+}

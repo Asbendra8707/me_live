@@ -1,0 +1,114 @@
+.profile-img-container {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border: 3px solid #A2FF00;
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-size: 32px;
+    color: #000000;
+  }
+  .sicons:hover {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-size: 42px;
+    color:#A2FF00;
+  }
+
+
+
+
+
+
+  /* AboutMe.css */
+
+.about-section {
+  background-color: #041e06; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+.about-section h1,
+.about-section h2,
+.about-section h3 {
+  color: #ffffff; /* Default white headings */
+}
+
+.about-card {
+  /* background-color: #141824; Same as background */
+  border: 1px solid  #A2FF00 ; /* Slightly lighter border */
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: transparent;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border: 1px solid #A2FF00 !important;
+}
+
+.text-success {
+  color:  #A2FF00 !important; /* Green theme */
+}
+
+.text-secondary {
+  color: #d1d1d1 !important; /* Light gray text */
+}
+
+p.text-muted.small {
+  color: #cccccc !important; /* Muted paragraph color */
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 2px solid #1abc9c;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1abc9c;
+  color: #ffffff;
+  border-radius: 50%;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease, margin-left 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #1abc9c;
+  color: #141824;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.download-btn:hover .icon {
+  background-color: #16a085;
+  transform: translateX(4px) rotate(15deg);
+}

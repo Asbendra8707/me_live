@@ -1,0 +1,34 @@
+.cimg{
+    height: 35vh;
+    border: 4px solid transparent;
+    border-radius: 12px;
+    transition: all 0.4s ease-in-out;
+   }
+   
+   
+   .cimg:hover {
+       /* border-image: linear-gradient(135deg, #88d498, #1e5631); */
+       border-image-slice: 1;
+       transform: scale(1.05);
+       box-shadow: 0 0 12px rgba(136, 212, 152, 0.5);
+     }
+     
+   
+   .ctitle{
+       text-align: center;
+       color: #047212;
+       font-family: "Playfair Display", serif;    
+   }
+   
+   .scard{
+       border-radius: 50px;
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+       border-radius: 16px; 
+       animation: fadeIn 1.5s ease-in-out;
+       animation: slideInLeft 1.5s ease; 
+   }
+   
+   .scard:hover {
+       transform: translateY(-10px);
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+     }

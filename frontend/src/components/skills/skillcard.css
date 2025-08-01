@@ -1,0 +1,39 @@
+h1{
+    color:  #A2FF00;
+}
+
+.database{
+    font-size: 100px;
+    display: flex;
+    float: center;
+}
+
+.header{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.skill-card{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #041e06;
+}
+.skill-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.card-title{
+    text-align: center;
+    font-family: "Playfair Display", serif; 
+    /* color: #041e06; */
+}
+.card-text{
+    text-align: center;
+}
+
+.stexth5{
+    font-family: "Playfair Display", serif;
+    margin-top: 20px;
+}

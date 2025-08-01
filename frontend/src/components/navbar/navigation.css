@@ -1,0 +1,42 @@
+.navbar,
+.navbar-brand,
+.nav-link,
+.offcanvas-title {
+  font-family: "Playfair Display", serif;
+}
+.offcanvas{
+  background-color: #0f2027;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #0f2027, #1e95bc, #062901); /* Dark blue gradient */
+    /* transition:background 0.5s ease; */
+  }
+  
+  .nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+    color:white !important;
+  }
+  
+  .nav-link:hover {
+    transform: translateY(-3px);
+    color: #5ded66 !important;
+  }
+  
+  .nav-link::after {
+    content: '';
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 10%; */
+    /* width: 80%; */
+    /* height: 2px; */
+    /* background-color: #f5c518; */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+  

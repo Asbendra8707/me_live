@@ -1,0 +1,15 @@
+section .home{
+    background-color: #14471a;
+    width:100vw;
+    height:75vh;
+}
+div .text{
+  margin-top: 10%;
+}
+.home h3{
+    font-size: 80px;
+}  
+.home h1{
+    font-size: 80px;
+    background: transparent;
+}  

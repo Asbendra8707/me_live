@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .slider {
+    position: relative;
+    width: 90%;
+    /* max-width: 900px; */
+    /* height: 800px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
+  
+  .slide .info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .activeSlide {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    z-index: 2;
+  }
+  
+  .prevSlide {
+    opacity: 0.6;
+    transform: translateX(-250px) scale(0.9);
+    z-index: 1;
+  }
+  
+  .nextSlide {
+    opacity: 0.6;
+    transform: translateX(250px) scale(0.9);
+    z-index: 1;
+  }
+  
+  .nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background 0.3s;
+  }
+  
+  .nav-arrow:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .nav-arrow.left {
+    left: 20px;
+  }
+  
+  .nav-arrow.right {
+    right: 20px;
+  }
+  
+  /* ====== RESPONSIVE DESIGN ====== */
+  @media (max-width: 768px) {
+    .slider {
+      height: 300px;
+    }
+  
+    .slide {
+      width: 80%;
+      height: 200px;
+    }
+  
+    .prevSlide {
+      transform: translateX(-150px) scale(0.8);
+    }
+  
+    .nextSlide {
+      transform: translateX(150px) scale(0.8);
+    }
+  
+    .nav-arrow {
+      font-size: 1.5rem;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slider {
+      height: 250px;
+    }
+  
+    .slide {
+      width: 90%;
+      height: 180px;
+    }
+  
+    .slide .info {
+      font-size: 0.8rem;
+      padding: 6px;
+    }
+  
+    .prevSlide {
+      transform: translateX(-100px) scale(0.75);
+    }
+  
+    .nextSlide {
+      transform: translateX(100px) scale(0.75);
+    }
+  
+    .nav-arrow {
+      font-size: 1.2rem;
+      padding: 6px;
+    }
+  }
+  

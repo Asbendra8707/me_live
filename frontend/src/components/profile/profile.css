@@ -1,0 +1,35 @@
+.letter {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .letter:hover {
+    transform: translateY(-5px) scale(1.2) rotate(-5deg);
+    color: #031e42; /* or any accent color */
+    text-shadow: 0 0 8px rgba(245, 197, 24, 0.6);
+    cursor: pointer;
+  }
+
+  .hover-letter {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    color: white;
+  }
+  
+  .hover-letter:hover {
+    transform: translateY(-6px) scale(1.15) rotate(-4deg);
+    color: #f5c518;
+    text-shadow: 0 0 12px rgba(245, 197, 24, 0.6);
+    cursor: default;
+  }
+  .name-letter {
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    color: black;
+    cursor: default;
+  }
+  
+  .name-letter:hover {
+    transform: translateY(-4px) rotate(-5deg) scale(1.1);
+    color: #f5c518;
+    text-shadow: 0 0 6px rgba(245,197,24,0.5);
+  }  
