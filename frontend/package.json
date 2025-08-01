@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "axios": "^1.11.0",
     "bootstrap": "^5.3.7",
+    "gsap": "^3.13.0",
     "nodemailer": "^7.0.5",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",

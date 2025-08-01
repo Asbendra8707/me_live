@@ -73,7 +73,7 @@ function Profile() {
                     flexDirection: 'column',
                     gap: '20px',
                     textAlign: 'center'
-                }}>
+                }} data-aos="flip-up">
                     {/* MORTAL */}
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <h1 style={{ fontSize: '32px', fontWeight: 'bold', marginRight: '12px' }} className='text-black'>👋Hello,It's Me</h1>
@@ -97,7 +97,7 @@ function Profile() {
                     </div>
 
                     {/* Asbendra Singh */}
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} data-aos="zoom-in">
                         <h1
                             style={{
                                 display: 'flex',
@@ -258,7 +258,7 @@ function Profile() {
                 flexWrap: 'wrap'
             }} className='container my-5'>
                 {/* Left section */}
-                <div style={{ flex: 1, minWidth: '300px' }}>
+                <div style={{ flex: 1, minWidth: '300px' }}  data-aos="fade-right">
                     <h2
                         style={{
                             fontSize: '38px',
@@ -313,7 +313,7 @@ function Profile() {
                         justifyContent: 'center',
                         padding: '6px', // spacing for border reveal
                     }}
-                >
+                    data-aos="fade-up">
                     <div
                         style={{
                             borderRadius: '20px',

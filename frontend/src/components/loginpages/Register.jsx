@@ -19,10 +19,10 @@ function Auth() {
     const [showPassword, setShowPassword] = useState(false);
 
     const handleChange = (e) => {
-        setFormData({
-            ...formData,
+        setFormData(prev => ({
+            ...prev,
             [e.target.name]: e.target.value
-        });
+        }));
     };
 
     const validatePassword = (password) => {

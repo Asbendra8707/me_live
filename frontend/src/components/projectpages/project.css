@@ -2,7 +2,7 @@
     height: 35vh;
     border: 4px solid transparent;
     border-radius: 12px;
-    transition: all 0.4s ease-in-out;
+    /* transition: all 0.4s ease-in-out; */
    }
    
    
@@ -24,8 +24,7 @@
        border-radius: 50px;
        transition: transform 0.3s ease, box-shadow 0.3s ease;
        border-radius: 16px; 
-       animation: fadeIn 1.5s ease-in-out;
-       animation: slideInLeft 1.5s ease; 
+       /* animation: fadeIn 1.5s ease-in-out; */
    }
    
    .scard:hover {

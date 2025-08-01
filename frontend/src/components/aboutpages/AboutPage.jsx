@@ -9,9 +9,9 @@ import {
 const AboutPage = () => {
   return (
     <>
-      <div className="container about-section text-white py-5">
-        <div className="row">
-          <div className="col-lg-4 mb-4 ">
+      <div className="container about-section text-white py-5" >
+        <div className="row" >
+          <div className="col-lg-4 mb-4 " data-aos="fade-right">
             <div className="my-4">
               <div className="profile-img-container">
                 <img src="aswin2.png" alt="Profile" className="profile-img" />
@@ -39,7 +39,7 @@ const AboutPage = () => {
           <div className="col-lg-8 p-5">
             <div className="row g-5">
               {/* Embedded Software */}
-              <div className="col-md-6">
+              <div className="col-md-6" data-aos="fade-down">
                 <div className="p-4 border rounded about-card h-100">
                   <h3 className="text-success fw-bold mb-1"style={{fontSize:'50px'}}>Embedded</h3>
                   <h3 className="text-success fw-bold mb-3"style={{fontSize:'50px'}}>Software</h3>
@@ -48,7 +48,7 @@ const AboutPage = () => {
               </div>
 
               {/* Internet of Things */}
-              <div className="col-md-6">
+              <div className="col-md-6" data-aos="fade-left">
                 <div className="p-4 border rounded about-card h-100">
                   <h3 className="text-success fw-bold mb-1" style={{fontSize:'50px'}}>Internet</h3>
                   <h3 className="text-success fw-bold mb-3" style={{fontSize:'50px'}}>Of Things</h3>
@@ -60,7 +60,7 @@ const AboutPage = () => {
               </div>
 
               {/* Frontend Web */}
-              <div className="col-md-6">
+              <div className="col-md-6" data-aos="fade-up">
                 <div className="p-4 border rounded about-card h-100">
                   <h3 className="text-success fw-bold mb-1" style={{fontSize:'50px'}}>FrontEnd</h3>
                   <h3 className="text-success fw-bold mb-3" style={{fontSize:'50px'}}>Web</h3>
@@ -73,7 +73,7 @@ const AboutPage = () => {
               </div>
 
               {/* Backend Web */}
-              <div className="col-md-6">
+              <div className="col-md-6" data-aos="fade-up-left">
                 <div className="p-4 border rounded about-card h-100">
                   <h3 className="text-success fw-bold mb-1" style={{fontSize:'50px'}}>Backend</h3>
                   <h3 className="text-success fw-bold mb-3" v>Web</h3>

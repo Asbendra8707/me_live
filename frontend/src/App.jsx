@@ -7,7 +7,18 @@ import Contact from './Pages/Contact'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Auth from './components/loginpages/Register'
 import LoginUser from './Pages/LoginUser'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false, // allow re-animation when scrolling back
+      mirror: true // optional: animate when scrolling up
+    });
+  }, []);
   return (
     <>
       <BrowserRouter>

@@ -20,12 +20,12 @@ const Services = () => {
         flexWrap: 'wrap'
       }} className='container my-5'>
         <div className=''>
-          <h1 className='' style={{ fontFamily: '"Playfair Display", serif' }}>My Services</h1>
+          <h1 className='' style={{ fontFamily: '"Playfair Display", serif' }} data-aos="fade-right">My Services</h1>
         </div>
         <div>
           <Row xs={1} md={3} className="g-4">
             <Col>
-              <Card className='scard'>
+              <Card className='scard' data-aos="fade-up">
                 <Card.Img variant="top" src="servicesbackend.jpg" className='cimg' />
                 <Card.Body>
                   <Card.Title className='ctitle'>Backend Development</Card.Title>
@@ -38,7 +38,7 @@ const Services = () => {
               </Card>
             </Col>
             <Col>
-              <Card className='scard'>
+              <Card className='scard' data-aos="fade-down-left">
                 <Card.Img variant="top" src="servicesFrontend.jpg" className='cimg' />
                 <Card.Body>
                   <Card.Title className='ctitle'>Frontend Development</Card.Title>
@@ -51,7 +51,7 @@ const Services = () => {
               </Card>
             </Col>
             <Col>
-              <Card className='scard'>
+              <Card className='scard' data-aos="fade-down">
                 <Card.Img variant="top" src="servicesgithub.jpg" className='cimg' />
                 <Card.Body>
                   <Card.Title className='ctitle'>Git & GitHub Handler</Card.Title>

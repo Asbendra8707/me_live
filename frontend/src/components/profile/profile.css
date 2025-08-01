@@ -1,6 +1,13 @@
 .letter {
     display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
+    will-change: transform,opacity;
+    /* transition: transform 0.3s ease, color 0.3s ease; */
+  }
+  .animated-btn {
+    will-change: transform;
+  }
+  .about-section {
+    will-change: opacity, transform;
   }
   
   .letter:hover {
