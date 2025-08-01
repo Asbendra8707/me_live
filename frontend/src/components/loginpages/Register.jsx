@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { Container, Form, Button, Card, InputGroup } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import { FaEnvelope, FaLock, FaUser, FaEye, FaEyeSlash } from 'react-icons/fa';
-import './Authpage.css'
+import './register.css'
 import axios from 'axios';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 function Auth() {
     const navigate = useNavigate();
@@ -61,9 +61,9 @@ function Auth() {
 
     return (
         <>
-            <div className="auth-bg">
+            <div className="reg-bg">
                 <Container className="d-flex justify-content-center align-items-center vh-100">
-                    <Card className="auth-card animate-card">
+                    <Card className="reg-card animate-reg-card">
                         <Card.Body>
                             <h2 className="text-center mb-4">Register</h2>
                             <Form onSubmit={handleSubmit} autoComplete="off">
@@ -128,13 +128,13 @@ function Auth() {
                                     </div>
                                 )}
 
-                                <Button variant="success" className="toggle-link w-100 mb-3" type="submit">
+                                <Button variant="success" className="toggle-reg-link w-100 mb-3" type="submit">
                                     Register
                                 </Button>
                             </Form>
                             <p className="text-center text-light">
                                 Already have an account?"{" "}
-                                <Link to="/loginuser" className="toggle-link text-decoration-none">
+                                <Link to="/loginuser" className="toggle-reg-link text-decoration-none">
                                     Login
                                 </Link>
                             </p>
