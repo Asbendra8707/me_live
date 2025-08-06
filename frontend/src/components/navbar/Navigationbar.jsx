@@ -52,15 +52,6 @@ const Navigationbar = () => {
                   <Nav.Link as={Link} to="/projects"><GrProjects /><span className='m-2'>Projects</span></Nav.Link>
                   <Nav.Link as={Link} to="/contacts"><MdContacts /><span className='m-2'>Contact</span></Nav.Link>
                 </Nav>
-                <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success text-white">Search</Button>
-                </Form>
                 <Link to="/register">
                 <Button variant="outline-success text-white" className='mx-md-3 my-2 my-sm-0'>Register</Button>
                 </Link>
