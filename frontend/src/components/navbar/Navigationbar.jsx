@@ -31,7 +31,7 @@ const Navigationbar = () => {
               className="d-inline-block align-top"
             />
               {' '}
-              <span className='mx-3'>ASBENDRA</span>
+            <span className='mx-3'>ASBENDRA</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas

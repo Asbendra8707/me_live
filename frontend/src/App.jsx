@@ -6,10 +6,10 @@ import Projects from './Pages/Projects'
 import Contact from './Pages/Contact'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Auth from './components/loginpages/Register'
-import LoginUser from './Pages/LoginUser'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import AuthPage from './components/loginpages/AuthPage'
 
 const App = () => {
   useEffect(() => {
@@ -28,7 +28,7 @@ const App = () => {
             <Route path="/skills" element={<Skills/>}></Route>
             <Route path="/projects" element={<Projects/>}></Route>
             <Route path="/contacts" element={<Contact/>}></Route>
-            <Route path="/loginuser" element={<LoginUser/>}></Route>
+            <Route path="/sign" element={<AuthPage/>}></Route>
             <Route path="/register" element={<Auth/>}></Route>
         </Routes>
       </BrowserRouter>

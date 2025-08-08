@@ -30,7 +30,7 @@ const AboutPage = () => {
             </p> <br />
             <p>I love to power ideas which could change the future of humanity</p>
 
-            <a href="/Asbendra+Resume.pdf" className="download-btn mt-4">
+            <a href="/Asbendra+Resume.pdf" className="download-btn mt-4" download={'asbendra.pdf'}>
             Download CV <span className="icon"><FaDownload /></span>
           </a>
           </div>

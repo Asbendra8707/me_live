@@ -1,46 +1,28 @@
 import React, { useState} from "react";
 import { Container, Form, Button, Card, InputGroup } from "react-bootstrap";
 import { Link} from 'react-router-dom';
-import { FaEnvelope, FaLock, FaUser, FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FaEnvelope, FaLock,FaEye, FaEyeSlash } from 'react-icons/fa';
 import './AuthPage.css'
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { useNavigate} from 'react-router-dom';
 
-function Authpage() {
+function AuthPage() {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [loggedIn, setLoggedIn] = useState(!!localStorage.getItem('token'));
     const [showPassword, setShowPassword] = useState(false);
 
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('/login', { email, password });
-
-            if (res.data.success) {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Login Successful',
-                    text: res.data.message,
-                    timer: 2000,
-                    showConfirmButton: false
-                });
-                // Optional: delay before navigating
-                setTimeout(() => navigate('/contacts'), 2000);
-            } else {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Login Failed',
-                    text: res.data.message
-                });
-            }
-        } catch (err) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Server Error',
-                text: err.message || 'Something went wrong!'
-            });
+            const res = await axios.post('/login',{email, password});
+            localStorage.setItem('token', res.data.token);
+            setLoggedIn(true);
+            navigate('/contacts')
+        } catch (error) {
+            console.error(error.message);          
         }
     };
 
@@ -106,4 +88,4 @@ function Authpage() {
     )
 }
 
-export default Authpage
+export default AuthPage

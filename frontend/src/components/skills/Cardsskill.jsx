@@ -21,8 +21,8 @@ function Cardsskill() {
   return (
     <>
       <div className='container rounded-4 p-3 my-5' style={{ backgroundColor: '#14471a' }}>
-        <h1 className='text-center text-white ' data-aos="fade-right">I SPECIALIZE IN A</h1>
-        <h1 className='text-center' data-aos="fade-left">RANGE OF 💪SKILLS</h1>
+        <h1 className='text-center text-white ' data-aos="fade-right">I Specialize In a</h1>
+        <h1 className='text-center' data-aos="fade-left">Range Of 💪Skills</h1>
 
         <Row xs={1} md={3} className="g-4 my-3">
           <Col>

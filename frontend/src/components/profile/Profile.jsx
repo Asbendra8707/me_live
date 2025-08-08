@@ -165,7 +165,7 @@ function Profile() {
                             </svg>
                             R<FaReact style={{ color: 'blue' }} />N<FaNodeJs style={{ color: 'greenyellow' }} /></p>
                         <h2 style={{
-                            fontSize: '64px',
+                            fontSize: '54px',
                             fontWeight: 'bold',
                             color: 'transparent',
                             WebkitTextStroke: '1.5px white',

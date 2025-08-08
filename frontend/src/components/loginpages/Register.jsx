@@ -12,7 +12,7 @@ function Auth() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        password: ''
+        passwordHash: ''
     });
 
     const [error, setError] = useState('');
@@ -49,11 +49,10 @@ function Auth() {
         // Clear error if all good
         setError('');
         // TODO: Handle successful registration (e.g., send to server)
-        console.log('Form submitted:', formData);
         try {
             const res = await axios.post('/user', formData)
             console.log('Server response:', res.data);
-            navigate('/loginuser')
+            navigate('/sign')
         } catch (error) {
             console.error(error.message.data);
         }
@@ -127,14 +126,13 @@ function Auth() {
                                         {error}
                                     </div>
                                 )}
-
                                 <Button variant="success" className="toggle-reg-link w-100 mb-3" type="submit">
                                     Register
                                 </Button>
                             </Form>
                             <p className="text-center text-light">
                                 Already have an account?"{" "}
-                                <Link to="/loginuser" className="toggle-reg-link text-decoration-none">
+                                <Link to="/sign" className="toggle-reg-link text-decoration-none">
                                     Login
                                 </Link>
                             </p>
