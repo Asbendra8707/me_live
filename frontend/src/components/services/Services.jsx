@@ -30,9 +30,7 @@ const Services = () => {
                 <Card.Body>
                   <Card.Title className='ctitle'>Backend Development</Card.Title>
                   <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  I work on the backend to handle server-side logic, manage databases, create APIs, and ensure secure, smooth application functionality.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -43,9 +41,7 @@ const Services = () => {
                 <Card.Body>
                   <Card.Title className='ctitle'>Frontend Development</Card.Title>
                   <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  Frontend is the user-facing part of a website, built with HTML, CSS, and JavaScript, ensuring design, interactivity, and responsiveness.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -56,9 +52,7 @@ const Services = () => {
                 <Card.Body>
                   <Card.Title className='ctitle'>Git & GitHub Handler</Card.Title>
                   <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  I use Git as a version control system to track and manage my code changes,collaborating with others, and maintaining my projects effectively.
                   </Card.Text>
                 </Card.Body>
               </Card>

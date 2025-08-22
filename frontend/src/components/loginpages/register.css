@@ -45,3 +45,10 @@
   .toggle-reg-link:hover {
     color: #ffd000;
   }
+
+  .custom-swal {
+    border-radius: 20px !important;   /* rounded corners */
+    width: 300px !important;          /* decrease width */
+    font-size: 14px;                  /* smaller text */
+    padding: 15px !important;         /* compact padding */
+  }
