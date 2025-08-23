@@ -132,7 +132,7 @@ function AuthPage() {
                             <>
                                 <button onClick={handleLogout} className="btn btn-outline-success w-100">Logout</button>
                                 <div className="mt-4">
-                                    <h5 className="text-center mb-3">📚 Course Fees</h5>
+                                    <h5 className="text-center mb-3">📚 Educations</h5>
                                     
                                     {/* Responsive Table Wrapper */}
                                     <div className="table-responsive">
